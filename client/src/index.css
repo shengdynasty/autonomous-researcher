@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: #080808;
+  color: #e5e5e5;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+
+/* Markdown report styles */
+.report-body h1 { font-size: 1.4rem; font-weight: 600; margin: 1.5rem 0 0.75rem; }
+.report-body h2 { font-size: 1.1rem; font-weight: 600; margin: 1.25rem 0 0.5rem; color: #a3a3a3; border-bottom: 1px solid #1f1f1f; padding-bottom: 0.25rem; }
+.report-body p  { margin: 0.6rem 0; line-height: 1.7; font-size: 0.875rem; color: #d4d4d4; }
+.report-body a  { color: #60a5fa; text-decoration: underline; text-underline-offset: 2px; }
+.report-body ul, .report-body ol { margin: 0.5rem 0 0.5rem 1.25rem; font-size: 0.875rem; color: #d4d4d4; }
+.report-body li { margin: 0.25rem 0; line-height: 1.6; }
+.report-body em { color: #a3a3a3; }
